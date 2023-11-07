@@ -12,7 +12,7 @@ const navAnimation = (direction1, direction2) => {
     navItems.forEach((nav, i) => {
         nav.classList.replace(`slide-${direction1}-${i+1}`, `slide-${direction2}-${i+1}`);
     })
-}
+};
 
 // Toggle Navigation bar function
 const toggleNav = () => {
@@ -27,7 +27,7 @@ const toggleNav = () => {
         overlay.classList.replace('overlay-slide-right', 'overlay-slide-left');
         navAnimation('in', 'out');
     }
-}
+};
 
 // Event listeners
 menuBars.addEventListener('click', toggleNav);
